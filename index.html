@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Treasure Island Dizzy - Game Demo</title>
+<style>
+  body { 
+    margin: 0; 
+    background: linear-gradient(to bottom, #87ceeb 0%, #98d8e8 100%);
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .game-container {
+    border: 3px solid #654321;
+    border-radius: 10px;
+    background: #000;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  }
+  canvas { 
+    display: block; 
+    background: linear-gradient(to bottom, #87ceeb 0%, #98d8e8 30%, #f4d35e 70%, #e6c547 100%);
+    max-width: 100%;
+    height: auto;
+  }
+  .controls {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .audio-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  .audio-btn {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 11px;
+  }
+  .audio-btn:hover { background: #666; }
+  .audio-btn.active { background: #0a84ff; }
+  
+  @media (max-width: 850px) {
+    .game-container {
+      margin: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="game-container">
+  <canvas id="gameCanvas" width="800" height="400"></canvas>
+  <div class="controls">Use Arrow Keys to Move • Collect All Treasures!</div>
+  <div class="audio-controls">
+    <button class="audio-btn" id="musicBtn">🎵 Music: ON</button>
+    <button class="audio-btn" id="sfxBtn">🔊 SFX: ON</button>
+  </div>
+</div>
+
+<script src="js/game.js"></script>
+</body>
+</html>
