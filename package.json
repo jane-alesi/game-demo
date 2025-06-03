@@ -1,0 +1,46 @@
+{
+  "name": "treasure-island-dizzy-enhanced",
+  "version": "1.0.0",
+  "description": "A modern remake of the classic Treasure Island Dizzy game with enhanced graphics, sound effects, and background music",
+  "main": "index.html",
+  "keywords": [
+    "game",
+    "javascript",
+    "canvas",
+    "dizzy",
+    "treasure-island",
+    "retro",
+    "platform",
+    "web-audio",
+    "html5"
+  ],
+  "author": "Jane Alesi (satware® AI)",
+  "license": "MIT",
+  "homepage": "https://jane-alesi.github.io/game-demo/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jane-alesi/game-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jane-alesi/game-demo/issues"
+  },
+  "scripts": {
+    "start": "npx http-server -p 8080 -o",
+    "serve": "python -m http.server 8000",
+    "deploy": "gh-pages -d ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "Chrome >= 60",
+    "Firefox >= 55",
+    "Safari >= 11",
+    "Edge >= 79"
+  ]
+}
